@@ -1,0 +1,670 @@
+body
+{
+    margin: 0;
+    padding: 0%;
+    font-family: sans-serif;
+    background: rgb(255, 254, 255);
+}
+/* LE HEADER MEME DESIGN QUE LES AUTRES*/                
+#header_1
+{   
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height:100px;    
+    background: rgb(255, 255, 255);
+}
+#header_1 ul 
+{
+    width: 50%;
+    float: right;
+}
+
+#header_1 li {
+    list-style: none;
+    float: right;
+    padding:5px;
+    margin-top: 20px;
+} 
+
+#header_1 li a{
+    color: #FD3D3B;
+    background: #18355a;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 15px;        
+}
+
+
+#header_1 .logo
+{
+    margin: -30px 20px;
+    padding: none;
+    width: 160px;
+
+}
+
+               /* ========================= La deuxieme partie du header ==================== */
+
+
+nav
+{   
+    width: 100%; 
+    height: 40px;   
+    background: #18355a55;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul 
+{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 1%;
+    transition: 200ms;
+    font-weight: bold;
+}
+
+nav ul li:hover
+{
+    background: #18355a;
+    transition-duration: 0.5s;      
+    border-radius: 15px;
+    transform: translateY(10px);    
+    cursor: pointer;    
+}
+
+
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+ul li a:hover
+{
+    color: #FD3D3B;    
+}
+
+ul li ul
+{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+ul li ul li
+{
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 10px 0;
+    float: left;
+    line-height: 10px;
+    display: none;
+    transition: 500ms;
+    
+}
+ul li ul li:hover
+{
+    background: #FD3D3B;
+    transform: translateX(15px);
+}
+
+ul li ul li a:hover
+{
+    color: #18355a;
+}
+
+ul li:hover ul li
+{
+    display: block;
+}        /* ============== Fin Header ========= */
+
+/*************************** LES DEUX PARTIES GAUCHE ET DROITES **********************/
+.container
+{
+    width: 100%;
+    height: 90%;
+
+}
+                /*************** La partie gauche ************/
+.gauche /*Le contenant de la partie gauche*/
+{
+    width: 59%;
+    height: 89.8%;
+    position: absolute;
+}
+
+.aireImg /* Le contenant de l'image descriptive*/
+{
+    width: 100%;
+    height: 75%;
+    margin: 2% 0;
+}
+
+.lesMiniatures /* Le contenant des images miniatures*/
+{
+    width: 100%;
+    height: 20%;
+    margin:0;
+}
+
+.miniature
+{
+    width: 14.5%;
+    height: 70%;
+    margin: 2.5% 0 0 2%;
+    float: left;
+}
+
+.miniature:hover
+{
+    transform: translateY(-5px);
+}
+
+.aireImg img
+{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    box-shadow: 0 1px 5px 0;
+}
+
+.miniature img
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 5px 0;    
+}/*** Fin de la partie gauche***/
+
+            /*************** La partie droite ************/
+.droite /*Le contenant de la partie droite*/
+{
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 150px;
+    right: 0;
+
+}
+
+.aireNom /* Le contenant du nom de la chaussure */
+{
+    width: 90%;
+    height: 15%;
+    margin: 5%;
+    border-bottom: #FD3D3B 1px solid;
+}
+.aireNom .nom
+{
+    padding: 2%;
+    float: left;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: bold;    
+    font-family: 'Lucida Sans Unicode';
+    color: #18355a;
+}
+
+.aireNom .prix
+{
+    float: right;
+    margin-top: 6%;
+    font-size: 100%;
+    font-style: italic;
+    color: #FD3D3B;
+}
+
+.aireNom span /* le nom de la chaussure*/
+{
+    float: right;
+    font-weight: 100;
+    font-size: 50%;
+
+}
+.aireText /* Le contenant texte descriptif */
+{
+    width: 90%;
+    height: 55%;
+    margin: 5%;
+}
+
+.aireText p /* Le texte descriiptif*/
+{
+    padding: 0 5%;
+    font-size: 14px;
+    text-align: justify;
+    line-height: auto;
+}
+
+.aireBouton /* Le contenant du nom du bouton */
+{
+    width: 30%;
+    height: 7%;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+}
+
+.aireBouton img  /* j'ai choisis une image comme bouton pour plus de style*/
+{
+    width: 100%;
+}
+.aireBouton img:hover
+{
+    transform: scale(1.05)
+}/*** Fin de la partie droite***/
+
+                /* =========================    Le Footer    ==================== */
+/*meme design que les autres*/
+footer
+{   
+    height: 80px;
+    background: rgba(194, 195, 196, 0.912);
+    border-top: 1px solid #FD3D3B;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footerPart
+{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+} 
+
+.lienUtiles
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.lienUtiles a
+{   
+    width: 25%;
+    float: left;
+    margin:auto 5px;
+    text-decoration: none;
+}
+
+.lienUtiles a p
+{
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
+.lienUtiles a p:hover
+{
+    color: #FD3D3B;
+}
+
+
+.footerPart span 
+{
+    margin: 30%;
+    padding: 20% auto;
+    line-height: 60px;
+}
+
+.reseaux 
+{
+    width: 90%;
+    height: 100%;
+    margin-right: 30px;
+}
+.reseaux a
+{
+    width: 25px;
+    height: 30px;
+    float: right;
+    padding:0 10px;
+    margin-top: 15px;
+    transition: 500ms;
+}
+
+.reseaux a img
+{
+    width: 100%;
+    
+}
+
+.reseaux a:hover
+{
+    transform: scale(1.2);
+}/*** Fin du footer***/
+
+                    /*============ ADAPTATION MOBILE ===========*/
+
+            @media only screen and (max-width:550px){
+                /* LE HEADER*/
+                #header_1 
+                {   
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height:120px;    
+                    background: rgb(255, 254, 255);
+                }
+
+                #header_1 ul /* Les deux liens doivent etre centré*/
+                {
+                    width: 100%; 
+                    position: absolute;
+                    top: 90px;
+                    right: 0;
+                }
+                #header_1 li {
+                    width: 40%;
+                    list-style: none;
+                    float: right;
+                    padding:0 5%;
+                    background: #FD3D3B;
+                    border-radius : 15px;    
+                    
+                } 
+                #header_1 li a{
+                    color: #18355a;
+                    background: none;
+                    padding:2px 12%;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+                #header_1 .logo
+                {
+                    margin: -20px 30%; /*Le logo au centre (30% de marge gauche)*/
+                    width: 160px;
+
+                }
+                nav{ /* bare de navigation*/
+                    width: 100%;
+                    height: auto;
+                    position: absolute;/* Car sur un telephone ca occuperait bcp de place*/
+                    top: 160px;
+                    border-bottom: 1px solid #FD3D3B;       
+                }
+                nav ul 
+                {
+                    width: auto;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+                nav ul li
+                {
+                    list-style: none;
+                    display: flex;
+                    padding: 1% 40%;
+                    transition: 200ms;
+                    font-weight: bold;
+                }
+
+                nav ul li:hover
+                {
+                    background: #18355a;
+                    transition-duration: 0.5s;      
+                    border-radius: 15px;
+                    transform: translateY(10px);    
+                    cursor: pointer;    
+                }
+
+
+                ul li a
+                {
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 90%;
+                }
+
+                ul li a:hover
+                {
+                    color: #FD3D3B;    
+                }
+
+                ul li ul
+                {
+                    padding: 0;
+                    margin: 0;
+                    width: 100px;
+                }
+
+                ul li ul li
+                {
+                    width: 100%;
+                    height: 10px;
+                    margin: 0;
+                    padding: 10px 0;
+                    float: left;
+                    line-height: 10px;
+                    display: none;
+                    transition: 500ms;
+                    
+                }
+                ul li ul li:hover
+                {
+                    background: #FD3D3B;
+                    transform: translateX(15px);
+                }
+                ul li ul li a:hover
+                {
+                    color: #18355a;
+                }
+                ul li:hover ul li
+                {
+                    display: block;
+                }
+                /* Fin du HEADER*/
+                            /*************** La partie droite ************/
+                .droite
+                {
+                    width: 100%; /* Centrer en premier lieu*/
+                    position: absolute;
+                    top: 330px; /*Mise en premiere place*/
+                }
+
+                .aireNom /* Le contenant du nom de la chaussure */
+                {
+                    width: 90%;
+                    height: 15%;
+                    margin: 5%;
+                    border-bottom: #18355a 1px solid;
+                }
+                .aireNom .nom
+                {
+                    padding: 2%;
+                    float: left;
+                    text-transform: uppercase;
+                    font-size: 150%;
+                    font-weight: bold;    
+                    font-family: 'Lucida Sans Unicode';
+                    color: #18355a;
+                }
+
+                .aireNom .prix
+                {
+                    float: right;
+                    margin-top: 6%;
+                    font-size: 100%;
+                    font-style: italic;
+                    color: #FD3D3B;
+                }
+
+                .aireNom span
+                {
+                    float: right;
+                    font-weight: 100;
+                    font-size: 50%;
+
+                }
+                .aireText /* Le contenant texte descriptif */
+                {
+                    width: 90%;
+                }
+
+                .aireText p
+                {
+                    padding: 0 5%;
+                    font-size: 14px;
+                    text-align: justify;
+                    line-height: auto;
+                }
+
+                .aireBouton /* Le contenant du nom du bouton */
+                {
+                    width: 30%;
+                    height: 7%;
+                    position: absolute;
+                    bottom: -70;
+                    right: 35%;
+                }
+
+                .aireBouton img
+                {
+                    width: 100%;
+                }
+                .aireBouton img:hover
+                {
+                    transform: scale(1.05)
+                }
+                /* Fin de la partie Droite*/
+
+                                /*************** La partie gauche ************/
+                .gauche
+                {
+                    width: 100%; /* Centré en deuxieme lieu*/
+                    height: 60%;
+                    position: absolute;
+                    top: 630;
+                }
+
+                .aireImg /* Le contenant de l'image descriptive*/
+                {
+                    width: 100%;
+                    height: 50%;
+                    margin: 2% 0;
+                }
+
+                .lesMiniatures /* Le contenant des images miniatures*/
+                {
+                    width: 100%;
+                    height: 20%;
+                    margin:0;
+                }
+
+                .miniature
+                {
+                    width: 14.5%;
+                    height: 70%;
+                    margin: 2.5% 0 0 2%;
+                    float: left;
+                }
+
+                .miniature:hover
+                {
+                    transform: translateY(-5px);
+                }
+
+                .aireImg img
+                {
+                    width: 90%;
+                    height: 90%;
+                    margin: 5%;
+                    box-shadow: 0 1px 5px 0;
+                }
+
+                .miniature img
+                {
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0 1px 5px 0;    
+                }   /* Fin de la partie Droite*/
+                
+                            /* =========================    Le Footer    ==================== */
+                
+                footer
+                {   
+                    height: auto;
+                    background: rgba(194, 195, 196, 0.912);
+                    border-top: 1px solid #FD3D3B;
+                    position: absolute;
+                    bottom: -550;
+                }
+                
+                footer .footerPart
+                {
+                    width: 33.333%;
+                    height: 100%;
+                    float: left;
+                } 
+                
+                .lienUtiles
+                {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .lienUtiles a
+                {   
+                    width: 100%;
+                    height: 20px;
+                    float: left;
+                    margin:2px 5px;
+                    text-decoration: none;
+                }
+                
+                .lienUtiles a p
+                {
+                    color: white;
+                    font-style: italic;
+                    font-size: 10;
+                }
+                .lienUtiles a p:hover
+                {
+                    color: #FD3D3B;
+                }
+                .footerPart span 
+                {
+                    margin: 20%;
+                    line-height: 60px;
+                    font-size: 12px;
+                }
+                    
+                .reseaux 
+                {
+                    width: 90%;
+                    height: 100%;
+                    margin-right: 30px;
+                }
+                .reseaux a
+                {
+                    width: 25px;
+                    height: 30px;
+                    float: right;
+                    padding:0 10px;
+                    margin-top: 15px;
+                    transition: 500ms;
+                }
+                
+                .reseaux a img
+                {
+                    width: 100%;
+                    
+                }
+                
+                .reseaux a:hover
+                {
+                    transform: scale(1.2);
+                }
+            }

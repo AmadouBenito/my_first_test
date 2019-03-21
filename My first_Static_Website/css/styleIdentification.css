@@ -1,0 +1,310 @@
+body
+{
+    margin: 0;
+    padding: 0%;
+    font-family: sans-serif;
+    background: url(../images/bgrIdent.jpg) fixed center ;
+    background-size: 100%;
+}
+
+                /* ========================= La premiere partie du header ==================== */
+
+#header_1
+{   
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height:100px;    
+    background: rgba(255, 254, 255, 0.898);
+}
+#header_1 li {
+    list-style: none;
+    float: right;
+    padding:5px;
+    margin-top: 20px;
+} 
+
+#header_1 li a{
+    color: #FD3D3B;
+    background: #18355a;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 15px;        
+}
+
+
+#header_1 .logo
+{
+    margin: -30px 20px;
+    padding: none;
+    width: 160px;
+
+}
+
+               /* ========================= La deuxieme partie du header ==================== */
+
+nav
+{   
+    width: 100%; 
+    height: 40px;   
+    background: #18355a52;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+nav ul 
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+nav ul li
+{ 
+    
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    transition: 200ms;
+    font-weight: bold;
+}
+
+nav ul li:hover
+{
+    background: #18355a;
+    transition-duration: 0.5s;      
+    border-radius: 15px;
+    transform: translateY(10px);    
+}
+
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+ul li a:hover
+{
+    color: #FD3D3B;    
+}    
+
+ul li ul
+{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+ul li ul li
+{
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 20px 0;
+    float: left;
+    line-height: 10px;
+    display: none;
+    transition: 500ms;
+    
+}
+ul li ul li:hover
+{
+    background: #FD3D3B;
+    transform: translateX(15px);
+}
+
+ul li ul li a:hover
+{
+    color: #18355a;
+}
+
+ul li:hover ul li
+{
+    display: block;
+} /* Fin du HEADER*/
+
+        /************************ Le formulaire **********************/				
+
+.container
+{
+    width: 30%;
+    height: 150%;
+    margin: 20px auto 10px;
+    background: #18355ace;
+    border: #FD3D3B 1px solid;
+    border-radius: 20px;
+}
+
+.container p /*Text de presentation (au debut)*/
+{
+    color: rgba(253, 62, 59, 0.795);
+    padding: 10px 0 ;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+form
+{
+    width: 80%;
+    height: 90%;
+    padding:0 12%;
+}
+
+.container form p /* Nom des forms*/
+{
+    padding: 5px 0 0 5px; 
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 5px;
+    color: white;
+
+}
+
+.container input
+{
+    width: 80%;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    color: snow;
+    font-size: 15px;
+    border: none;
+    border-bottom: #FD3D3B 1.3px solid;
+    background: transparent;
+    outline: none;
+}
+.container input[type="date"]
+{
+    width: 50%;
+    height: 40px;
+    padding: 0;
+    margin: 0 70px;
+    font-size: 15px;
+    border: none;
+    border-bottom: #FD3D3B 1.3px solid;
+    background: transparent;
+    outline: none;
+}
+
+
+select /*Liste deroulante*/
+{
+    margin: auto 30%;
+    border: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 800;
+    background: transparent;
+    outline: none;
+}
+
+option 
+{
+    background: rgba(141, 131, 131, 0.041);
+    color: #FD3D3B;
+    outline: none;
+}
+
+::-webkit-input-placeholder /* Design des placeholder*/
+{
+    text-align: center;
+    color: rgba(194, 195, 196, 0.9)
+}
+
+button
+{
+    padding: 15px;
+    margin: 0 35%;
+    border: none;
+    color: #fff;
+    background: rgb(143, 142, 142);
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+                /* Fin de la formulaire*/
+
+/*============= le footer ===========*/
+
+footer
+{   
+    height: 80px;
+    background: rgba(194, 195, 196, 0.912);
+    border-top: 1px solid #FD3D3B;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footerPart
+{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+} 
+
+.lienUtiles
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.lienUtiles a
+{   
+    width: 25%;
+    float: left;
+    margin:10px 5px;
+    text-decoration: none;
+}
+
+.lienUtiles a p
+{
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
+.lienUtiles a p:hover
+{
+    color: #FD3D3B;
+}
+
+
+.footerPart p 
+{
+    text-align: center;
+    margin: none;
+    padding: none;
+}
+
+.reseaux 
+{
+    width: 90%;
+    height: 100%;
+    margin-right: 30px;
+}
+.reseaux a
+{
+    width: 25px;
+    height: 30px;
+    float: right;
+    padding:0 10px;
+    margin-top: 25px;
+    transition: 500ms;
+}
+
+.reseaux a img
+{
+    width: 100%;
+    
+}
+
+.reseaux a:hover
+{
+    transform: scale(1.2);
+}

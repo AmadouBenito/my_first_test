@@ -1,0 +1,102 @@
+<html>
+    <meta charset="utf-8">
+	<head>
+		<title>My first web Designed | Welcome</title>
+		<!--Adapter la taille du site aux mobiles lecteurs -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./css/styleIdentification.css">
+		<script src="./JavaScript/JavaScript2.js"></script>
+	</head>
+
+	<body> 
+		<header>
+		<!--    ************************ LE HEADER ***************************   -->			
+		
+			<!--This is the first part of the header-->
+				<div id="header_1">
+					<ul>
+					<a href="Home.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
+					<li class="lien"><a href="#">Mon Panier</a></li>
+					<li class="lien"><a href="#">Espace Client</a></li>
+					</ul>					
+				</div>
+		</header>
+		<nav		><!--La deuxieme premiere partie du header-->
+			<ul> <!--La partie mere-->
+				<li> <a href="ListeArticle.html">Nouveauté</a></li>
+				<li> <a href="ListeArticle.html">tendance</a></li>
+				<li> <a href="ListeArticle.html">femmes</a></li>
+				<li> <a href="ListeArticle.html">enfants</a></li>  
+				<li> <a href="ListeArticle.html">soldes</a></li>                        
+				<li> <a href="ListeArticle.html">marques</a>
+					<ul><!--La partie fils-->
+						<li><a href="ListeArticle.html">Nike</a></li>
+						<li><a href="ListeArticle.html">Adidas</a></li>
+						<li><a href="ListeArticle.html">Jordan</a></li>
+						<li><a href="ListeArticle.html">Puma</a></li>
+					</ul>
+				</li> 
+				<li> <a href="ListeArticle.html">blog</a></li>                 							                        
+			</ul>
+		</nav>
+
+		<!--    ************************ Le formulaire **********************-->				
+
+	<section class="container">
+<!--Les differentes variables et fonctions que vous verez ici sont bien definies dans le ficher javaScript -->		
+			<p>Veuillez remplir le formulaire pour valider</p>
+		<form name="formulaire" onsubmit="return valider();">
+			<p>Mail</p>
+			<input type="email" placeholder="Ex: abc123@mail.com" name="mail" id="email_id" onchange="Javascript:if(this.value != '') {mail_valide=true;} else {mail_valide=false;} validerMail(); activeButton();" >
+			<p id="mail_error"></p>
+			<p>Confirmez votre mail</p>
+			<input type="email" placeholder="Les deux doivent etre identiques" name="confirmMail" id="mail_confirm_id" onchange="Javascript:if(this.value != '' && this.value == mail.value) {mail_confirm_valide=true;} else {mail_confirm_valide=false;} validerMail(); activeButton();">
+			<p id="mail_confirm_error"></p>
+			<p>Mot de passe</p>
+			<input type="password" placeholder="SVP mettez un nombre au moins" name="password" id="password_id" onchange="Javascript:if((this.value != '') && (/[\d]/.test(this.value))) {password_valide=true;} else {password_valide=false;} validerPassword(); activeButton();">		
+			<p id="password_error"></p>
+			<p>Confirmez le mot de passe</p>
+			<input type="password" placeholder="**********" name="confirmPassword" id="password_confirm_id" onchange="Javascript:if(this.value != '' && this.value == password.value) {password_confirm_valide=true;} else {password_confirm_valide=false;} validerPassword_confirm();">
+			<p id="password_confirm_error"></p>				
+			<select name="civilite" id="civilite_id" onchange="Javascript:if(this.value != 0) {civilite_valide=true;} else {civilite_valide=false;} validerCivilite(); activeButton();">
+				<option value="0">Votre Civilité</option>				
+				<option value="Monsieur">Monsieur</option>
+				<option value="Madame">Madame</option>	
+			</select>	
+			<p id="civilite_error"></p>				
+			<p>Prénom</p>
+			<input type="text" placeholder="Ex: Amadou" name="name" id="name_id" onchange=" Javascript:if(this.value==''){name_valide = false} else{name_valide = true} validerName(); activeButton();">
+			<p id="name_error"></p>			
+			<p>Nom</p>
+			<input type="text" placeholder="Ex: DIOP" name="lastName" id="lastname_id" onchange=" Javascript:if(this.value==''){lastname_valide = false} else{lastname_valide = true} validerLastname(); activeButton();">	
+			<p id="lastname_error"></p>			
+			<p>Date de naissance</p>
+			<input type="date" name="date">	
+			<p id="date_error"></p>				
+			<button active disabled id="button_id" >VALIDER</button>						
+		</form>
+	</section>
+
+		<!--    ************************ Le Footer **********************-->				
+		<footer>
+			<div class="footerPart">
+				<div class="lienUtiles">	
+					<a href="#"><p>Contactez-nous</p></a>
+					<a href="#"><p>Services</p></a>
+					<a href="#"><p>Lien légaux</p></a>
+				</div>
+			</div>
+			<div class="footerPart">
+				<p>2018L3INFO &copy;</p>
+			</div>
+			<div class="footerPart">
+				<div class="reseaux">
+					<a href="#"><img src="./images/icone footer/icone_isntagram.png" alt="instagram"></a>
+					<a href="#"><img src="./images/icone footer/icone_twiter.png" alt="twiter"></a>
+					<a href="#"><img src="./images/icone footer/icone_whatsapp.png" alt="whatsapp"></a>
+					<a href="#"><img src="./images/icone footer/icone_facebook.png" alt="facebook"></a>
+				</div>	
+			</div>
+		</footer>
+    </body>
+</html>
